@@ -9,14 +9,19 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  border: solid 1px black;
+  margin: 50px auto 0px;
+  box-shadow: 0px 0px 3px 1px #333;
   height: 500px;
   width: 300px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fff;
 }
 
+/* Header */
+
 .header {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   color: rgb(20, 129, 231);
   text-shadow: 1px 1px 2px #333;
@@ -26,4 +31,89 @@ body {
 .header-wrapper {
   background-color: #fff;
   padding: 10px;
+}
+
+/* Task field */
+
+.taskfield-wrapper {
+  background-color: rgba(20, 129, 231, 0.4);
+  padding: 15px 25px;
+}
+
+.TaskField-form_control {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.taskfield {
+  background-color: #fff;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 1px solid rgb(1, 114, 219);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
+
+.taskfield:focus {
+  outline: none !important;
+  border-color: rgb(1, 114, 219);
+  box-shadow: 0 0 2px #0a274d;
+}
+
+.taskfield-button {
+  background-color: rgb(1, 114, 219);
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  height: 2rem;
+  color: #eee;
+  margin-bottom: 5px;
+  transition-duration: 300ms;
+}
+
+.taskfield-button:hover {
+  background-color: rgba(1, 114, 219, 0.8);
+  transform: translateY(-1px);
+  transition-duration: 300ms;
+  border: solid 1px #eee;
+}
+
+/* Task list */
+
+.Tasklist-task {
+  color: #333;
+  background-color: rgba(3, 94, 179, 0.1);
+  border: solid 1px #fff;
+}
+
+.tasklist-heading {
+  text-align: center;
+  color: rgb(3, 94, 179);
+}
+
+.tasklist-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.list-btn {
+  background-color: rgb(228, 72, 72);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 2px 5px;
+  margin-left: 10px;
+}
+
+.list-btn:hover {
+  border: 1px solid rgb(66, 60, 60);
 }
